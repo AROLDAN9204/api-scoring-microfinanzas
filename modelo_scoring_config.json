@@ -1,0 +1,21 @@
+{
+    "X_cols": [
+        "Edad",
+        "Ciudad",
+        "Grado_Escolaridad",
+        "Tipo_Empleo",
+        "Nivel_Endeudamiento",
+        "Score_Credito",
+        "Antiguedad_Empleo",
+        "Rango_Edad",
+        "Endeudamiento_Alto",
+        "Ingreso_Log",
+        "PD_RF",
+        "Prediccion_Final"
+    ],
+    "cutoff_final": 0.305,
+    "score_min": 0,
+    "score_max": 1000,
+    "modelo": "RandomForest",
+    "version": "1.0.0"
+}
