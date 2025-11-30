@@ -14,9 +14,9 @@ import json
 # -----------------------------
 # Cargar modelo y configuración
 # -----------------------------
-pipeline = load("modelo_scoring_rf.joblib")
+pipeline = load("modelo_scoring_rf_compressed.joblib")
 
-with open("modelo_scoring_config.json", "r", encoding="utf-8") as f:
+with open("modelo_scoring_rf_compressed.joblib", "r", encoding="utf-8") as f:
     config = json.load(f)
 
 X_cols = config["X_cols"]
@@ -97,4 +97,5 @@ def predecir(cliente: Cliente):
 # -----------------------------
 @app.get("/")
 def root():
+
     return {"mensaje": "API de Scoring funcionando correctamente"}
